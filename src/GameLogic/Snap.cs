@@ -140,6 +140,12 @@ namespace CardGames.GameLogic
 				_score[player]++;
 				//TODO: consider playing a sound here...
 			}
+			//updated by TL
+
+			else if ( player >= 0 && player < _score.Length)
+           {
+_         score[player]--;
+           }
 
 			// stop the game...
 			_started = false;
