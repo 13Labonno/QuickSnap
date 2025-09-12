@@ -18,15 +18,14 @@ namespace CardGames
 		/// </summary>
 		/// <param name="myGame">The game object to update in response to events.</param>
 		private static void HandleUserInput(Snap myGame)
-		{
-			//Fetch the next batch of UI interaction
-			SwinGame.ProcessEvents();
-
-			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			{
-				myGame.FlipNextCard ();
-			}
-		}
+        {
+            //Fetch the next batch of UI interaction
+            SwinGame.ProcessEvents();
+            if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
+            {
+				myGame.Start ();
+            }
+        }
 
 		/// <summary>
 		/// Draws the game to the Window.
